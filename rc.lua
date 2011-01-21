@@ -7,10 +7,13 @@ require("beautiful")
 -- Notification library
 require("naughty")
 
+-- A much needed home path
+homedir = awful.util.pread("echo $HOME"):gsub("\n", "")
+
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
 -- DEFAULT beautiful.init("/usr/share/awesome/themes/default/theme.lua")
-beautiful.init("/home/scopatz/.config/awesome/themes/mine/theme.lua")
+beautiful.init(homedir .. "/.config/awesome/themes/enthought/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 -- terminal = "aterm" --default
